@@ -20,5 +20,33 @@ ANSIBLE > Deploy our application with all required dependencies.
 NOTE: Jenkins will run ansible and terraform and at this phase,  creation of ami if required will be manual.
 lets try to minimise manual effort as much as possible. we will write code wherever possible and automate.
 
+# JENKINS
+ # install jenkins in a vm/ec2 (ubuntu)
+  # install java/jdk
+  
+  sudo apt update
+  
+  sudo apt install openjdk-8-jdk
+  
+  # Jenkins Debian repository
+  
+  wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+  
+  sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+  
+  # Install Jenkins
+  
+  sudo apt update
+  
+  sudo apt install jenkins
+  
+  # Verify installation
+  
+  systemctl status jenkins
+  
+  # install job dsl
+
+  manage jenkins > available > job dsl
+
 
 
