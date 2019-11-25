@@ -17,3 +17,15 @@
   # verify terraform 
   
       terraform -v
+      
+      
+      
+# install Ansible
+
+  # search and install ansible
+  
+    apt search ansible
+    
+    apt-cache search ansible
+    
+    sudo apt install ansible
