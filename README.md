@@ -44,6 +44,8 @@ lets try to minimise manual effort as much as possible. we will write code where
   
   systemctl status jenkins
   
+  # install node js, terraform, ansible and other requirements 
+  
   # install job dsl and nodejs
 
   manage jenkins > available > job dsl and nodejs
