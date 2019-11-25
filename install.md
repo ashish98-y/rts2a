@@ -29,3 +29,18 @@
     apt-cache search ansible
     
     sudo apt install ansible
+
+# install docker
+    # install
+    
+    sudo apt install docker.io
+    
+    # Enable on reboot
+    
+    sudo systemctl start docker
+    
+    sudo systemctl enable docker
+    
+    # run without sudo
+    
+    sudo usermod -aG docker $USER
