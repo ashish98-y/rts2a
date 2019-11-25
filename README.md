@@ -38,6 +38,9 @@ lets try to minimise manual effort as much as possible. we will write code where
   
   sudo apt update
   
+  a basic pipeline will have a trigger followed by pipeline script with multiple stages like build, test, release etc.
+  to check what more can be present in a pipeline refer https://jenkinsci.github.io/job-dsl-plugin/#path/pipelineJob
+  
   sudo apt install jenkins
   
   # Verify installation
