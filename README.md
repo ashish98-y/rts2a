@@ -1,6 +1,6 @@
 # Deployment with very less/no human intervention
 # rts2a :deploy to a ubuntu machine
-so far we used SCM git,
+so far we used SCM git, the ubuntu instance we created in rts1 can be used here as well or can use a new instances
 # PLAN
 
 check in (GIT) > build(npm install in buildserver/JENKINS) > test (run unit/integration/etc tests in JENKINS) > release (package and artifact NA) > provision (have an ubuntu machine -TERRAFORM) > deploy (run our code in provisioned machine -ANSIBLE)> end user /customer
