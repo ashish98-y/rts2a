@@ -10,8 +10,11 @@ ie in simpler words
 GIT > JENKINS >TERRAFORM > ANSIBLE
 
 GIT -> scm
+
 JENKINS > build,test ,release and any other automation.
+
 TERRAFORM > Infrastructure provision
+
 ANSIBLE > Deploy our application with all required dependencies.
 
 NOTE: Jenkins will run ansible and terraform and at this phase,  creation of ami if required will be manual.
