@@ -52,3 +52,43 @@ lets try to minimise manual effort as much as possible. we will write code where
   to check what more can be present in a pipeline refer https://jenkinsci.github.io/job-dsl-plugin/#path/pipelineJob
 
   i would recommend you to run your pipeline manually and then write a job dsl script for the same. 
+  when writing your "pipeline script" ie when it is not from scm syntax
+     
+     node {
+           
+           // variables: def var1=""
+           
+           stage('StageName') {
+           
+                //code specific to your stage
+        
+           }
+           
+           ...
+           
+           // multiple stages
+           
+      }
+}
+
+  Pipeline from SCM
+  
+  pipeline {
+  
+    agent { //docker 'maven:3-alpine' } 
+    
+    stages {
+    
+        stage('Example Build') {
+        
+            steps {
+            
+                //sh 'mvn -B clean verify'
+                
+            }
+            
+        }
+        
+    }
+    
+}
