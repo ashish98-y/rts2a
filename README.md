@@ -45,7 +45,13 @@ lets try to minimise manual effort as much as possible. we will write code where
   systemctl status jenkins
   
   # install node js, terraform, ansible and other requirements 
-  
+
+install docker as well for nexus which wont be used now.
+
+mkdir /var/data/nexus-data && chown -R 200 /var/data/nexus-data
+
+docker run -d -p 8081:8081 --name nexus -v /var/data/nexus-data:/sonatype-work sonatype/nexus
+
   # install job dsl and nodejs
 
   manage jenkins > available > job dsl and nodejs
